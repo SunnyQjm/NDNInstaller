@@ -33,6 +33,7 @@ function cloneOrUpdate() {
                 mkdir ${name}
             else
                 echo "${name}已是最新版本，无需更新"
+		cd ${name}
                 return
             fi
         fi
