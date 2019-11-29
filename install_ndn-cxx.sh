@@ -8,10 +8,8 @@ NDN_CXX_VERSION=0.6.6
 
 # install ndn-cxx prerequesites
 sudo apt-get install build-essential libsqlite3-dev libssl-dev curl tar -y
-sudo apt-get install doxygen graphviz python-sphinx python-pip  -y
-sudo pip install --upgrade pip
-sudo pip install --upgrade setuptools
-sudo pip install sphinxcontrib-doxylink sphinxcontrib-googleanalytics
+sudo apt install doxygen graphviz python3-pip -y
+sudo pip3 install sphinx sphinxcontrib-doxylink
 
 # install ndn-cxx
 cloneOrUpdate ndn-cxx https://github.com/named-data/ndn-cxx/archive/ndn-cxx-${NDN_CXX_VERSION}.tar.gz ${NDN_CXX_VERSION}
