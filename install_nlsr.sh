@@ -4,9 +4,15 @@
 
 source ./common.sh
 
+current_path=`pwd`
+
 source ./install_Psync.sh
 
+cd $current_path
+
 source ./install_ChronoSync.sh
+
+cd $current_path
 
 # install NLSR
 cloneOrUpdate NLSR https://github.com/named-data/NLSR/archive/NLSR-${NLSR_VERSION}.tar.gz ${NLSR_VERSION}
