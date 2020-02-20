@@ -4,8 +4,6 @@
 
 source ./common.sh
 
-NDN_CPP_VERSION=v0.16
-
 # install ndn-cpp
 sudo apt install build-essential libssl-dev libsqlite3-dev libprotobuf-dev protobuf-compiler \
     liblog4cxx-dev doxygen -y

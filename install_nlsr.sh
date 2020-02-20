@@ -4,8 +4,6 @@
 
 source ./common.sh
 
-NLSR_VERSION=0.5.1
-
 source ./install_Psync.sh
 
 source ./install_ChronoSync.sh

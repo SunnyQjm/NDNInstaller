@@ -4,8 +4,6 @@
 
 source ./common.sh
 
-PSYNC_VERSION=0.1.0
-
 # install PSync
 cloneOrUpdate PSync https://github.com/named-data/PSync/archive/${PSYNC_VERSION}.tar.gz ${PSYNC_VERSION}
 ./waf configure

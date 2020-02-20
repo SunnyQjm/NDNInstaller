@@ -4,9 +4,6 @@
 
 source ./common.sh
 
-NDN_NFD_VERSION=0.6.6
-WEB_SOCKET_PP_VERSION=0.8.1
-
 # install nfd prerequesites
 sudo apt-get install build-essential pkg-config valgrind libsystemd-dev \
                      libsqlite3-dev libssl-dev libpcap-dev -y
@@ -17,8 +14,9 @@ sudo apt-get install build-essential pkg-config valgrind libsystemd-dev \
                      libsqlite3-dev libssl-dev libpcap-dev -y
 sudo apt-get install doxygen graphviz python-sphinx -y
 cloneOrUpdate NFD https://github.com/named-data/NFD/archive/NFD-${NDN_NFD_VERSION}.tar.gz ${NDN_NFD_VERSION}
-mkdir websocketpp
-curl -L https://github.com/zaphoyd/websocketpp/archive/${WEB_SOCKET_PP_VERSION}.tar.gz > websocket.tar.gz
+mkdir -p websocketpp
+curl -L https://github.com/cawka/websocketpp/archive/${WEB_SOCKET_PP_VERSION}.tar.gz > websocket.tar.gz
+# curl -L https://github.com/cawka/websocketpp/archive/0.8.1-hotfix.tar.gz > websocketpp.tar.gz
 tar xf websocket.tar.gz -C websocketpp/ --strip 1
 ./waf configure
 ./waf

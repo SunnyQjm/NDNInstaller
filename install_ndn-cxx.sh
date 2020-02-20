@@ -4,10 +4,8 @@
 
 source ./common.sh
 
-NDN_CXX_VERSION=0.6.6
-
 # install ndn-cxx prerequesites
-sudo apt-get install build-essential libsqlite3-dev libssl-dev curl tar -y
+sudo apt install build-essential libsqlite3-dev libssl-dev curl tar -y
 sudo apt install doxygen graphviz python3-pip -y
 sudo pip3 install sphinx sphinxcontrib-doxylink
 

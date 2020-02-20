@@ -2,6 +2,24 @@
 
 DEFAULT_DIR=~/Documents/nfd
 
+# ndn-cxx
+NDN_CXX_VERSION=0.7.0
+
+# nfd
+NDN_NFD_VERSION=0.7.0
+WEB_SOCKET_PP_VERSION=0.8.1-hotfix 
+
+# NLSR
+CHRONO_SYNC_VERSION=0.5.3
+PSYNC_VERSION=0.2.0
+NLSR_VERSION=0.5.1
+
+# ndn-cpp
+NDN_CPP_VERSION=v0.17
+
+# ndn-tools
+NDN_TOOLS_VERSION=0.7
+
 function ensureDir() {
     dir=$1
     if [[ ! -d "$dir" ]]; then
