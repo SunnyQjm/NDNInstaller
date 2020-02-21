@@ -4,7 +4,7 @@
 
 - ### 版本说明
 
-  当前脚本中包含的各个库的脚本如下：
+  当前脚本中包含的各个库的版本如下：
 
   - [ndn-cxx](https://github.com/named-data/ndn-cxx/releases) => 0.7.0
   - [nfd](https://github.com/named-data/NFD/releases) => 0.7.0
