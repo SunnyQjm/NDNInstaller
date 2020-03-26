@@ -79,7 +79,7 @@
   - nfd
 
     ```bash
-    ./install_ndn-cpp.sh
+    ./install_nfd.sh
     ```
 
   - nlsr
