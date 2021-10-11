@@ -6,13 +6,13 @@
 
   当前脚本中包含的各个库的版本如下：
 
-  - [ndn-cxx](https://github.com/named-data/ndn-cxx/releases) => 0.7.0
-  - [nfd](https://github.com/named-data/NFD/releases) => 0.7.0
+  - [ndn-cxx](https://github.com/named-data/ndn-cxx/releases) => 0.7.1
+  - [nfd](https://github.com/named-data/NFD/releases) => 0.7.1
     - [websocketpp](https://github.com/cawka/websocketpp/releases) => 0.8.1-hotfix 
-  - [ndn-tools](https://github.com/named-data/ndn-tools/releases) => 0.7
-  - [NLSR](https://github.com/named-data/NLSR/releases) => 0.5.1
-    - [PSync](https://github.com/named-data/PSync/releases) => 0.2.0
-    - [ChronoSync](https://github.com/named-data/ChronoSync/releases) => 0.5.3
+  - [ndn-tools](https://github.com/named-data/ndn-tools/releases) => 0.1
+  - [NLSR](https://github.com/named-data/NLSR/releases) => 0.6.0
+    - [PSync](https://github.com/named-data/PSync/releases) => 0.3.0
+    - [ChronoSync](https://github.com/named-data/ChronoSync/releases) => 0.5.4
 
 - ### 自定义版本安装
 
@@ -24,22 +24,22 @@
   DEFAULT_DIR=~/Documents/nfd
   
   # ndn-cxx
-  NDN_CXX_VERSION=0.7.0
+  NDN_CXX_VERSION=0.7.1
   
   # nfd
-  NDN_NFD_VERSION=0.7.0
-  WEB_SOCKET_PP_VERSION=0.8.1-hotfix 
+  NDN_NFD_VERSION=0.7.1
+  WEB_SOCKET_PP_VERSION=0.8.1-hotfix
   
   # NLSR
-  CHRONO_SYNC_VERSION=0.5.3
-  PSYNC_VERSION=0.2.0
-  NLSR_VERSION=0.5.1
+  CHRONO_SYNC_VERSION=0.6.0
+  PSYNC_VERSION=0.3.0
+  NLSR_VERSION=0.5.4
   
   # ndn-cpp
-  NDN_CPP_VERSION=v0.17
+  NDN_CPP_VERSION=v0.18
   
   # ndn-tools
-  NDN_TOOLS_VERSION=0.7
+  NDN_TOOLS_VERSION=0.7.1
   ```
 
   
@@ -48,7 +48,7 @@
 
   - 系统为Ubuntu或者Debain系列系统，支持apt包管理
 
-  - 使用本脚本进行安装之前，要求系统装有boost，boost版本不要太低，建议`15.8`以上，如果想要安装指定版本的boost，建议去官网下载，编译安装，如果没有指定要求，可执行下列代码安装boost：
+  - 使用本脚本进行安装之前，要求系统装有boost，boost版本不要太低，建议`16.7`以上，如果想要安装指定版本的boost，建议去官网下载，编译安装，如果没有指定要求，可执行下列代码安装boost：
 
     ```bash
     sudo apt update
